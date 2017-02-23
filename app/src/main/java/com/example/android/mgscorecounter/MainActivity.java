@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
 
         String messageStart = String.format(getString(R.string.played_holes_msg_start), holesCount);
-        String messageEnd = "st hole.";                                                                     //!!Asked for help in forum to put this enumeration into string.xml
+        String messageEnd = "st hole.";
 
         if (holesCount == 2) {
             messageEnd = "nd hole.";
