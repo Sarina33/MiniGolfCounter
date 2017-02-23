@@ -199,7 +199,6 @@ public class MainActivity extends AppCompatActivity {
         if (holesCount == 2) {
             messageEnd = "nd hole.";
         }
-
         if (holesCount == 3) {
             messageEnd = "rd hole.";
         }
