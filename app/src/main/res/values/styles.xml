@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAppBar</item>
+        <item name="colorPrimaryDark">@color/colorStatusBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+    </style>
+
+
+    //Layouts with attributes width=match_parent and height=wrap_content
+    <style name="LayoutAttr1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutAttr1.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LayoutAttr1.Button">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+    <style name="LayoutAttr1.Button.Land">
+        <item name="android:layout_marginLeft">@dimen/button_margin_left_land</item>
+        <item name="android:layout_marginRight">@dimen/button_margin_right_land</item>
+    </style>
+
+
+    //Layouts with attributes width=wrap_content and height=wrap_content
+    <style name="LayoutAttr2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutAttr2.ViewSwitcher">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LayoutAttr2.PlayerNameTv">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="LayoutAttr2.PlayerNameEdit">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="LayoutAttr2.Score">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">46sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="LayoutAttr2.EnterButton">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+    <style name="LayoutAttr2.EnterButton.Land">
+        <item name="android:layout_width">@dimen/button_layout_width</item>
+    </style>
+
+    <style name="LayoutAttr2.UndoResetButton">
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:layout_width">100dp</item>
+    </style>
+
+    <style name="LayoutAttr2.UndoResetButton.Land">
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:layout_width">@dimen/button_layout_width</item>
+    </style>
+
+    <style name="LayoutAttr2.PlayedHoles">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    //Layouts with unique attributes
+    <style name="WeightLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">A Minigolf Counter App</string>
+
+    //JAVA File Strings
+
+    //Final Message Dialog PopUp Strings
+    <string name="dialog_msg_start">You finished the %1$dth hole and therefore the set! \n\n</string>
+    <string name="winner">The winner is %1$s!</string>
+    <string name="winner_score">%1$s won with %2$d strokes over %3$ss %4$d strokes.</string>
+    <string name="dialog_new_game_button">New Game</string>
+    <string name="dialog_title">End of Set</string>
+
+    //Game History Dialog PopUp Strings
+    <string name="game_history_dialog_title">Score History</string>
+    <string name="game_history_dialog_msg">%1$s - Set with %2$d holes \n%3$s</string>
+    <string name="game_history_dialog_back_button">Back</string>
+
+    //Toast Message
+    <string name="toast">You are now playing a set with %1$d holes</string>
+
+    //Played Holes Message Strings
+    <string name="played_holes_msg_start">You are playing at the %1$d</string>
+
+
+    //Menu Strings
+    <string name="menu_new_game">New Game</string>
+    <string name="menu_number_of_holes">Number of holes</string>
+    <string name="menu_18_holes">Set with 18 holes</string>
+    <string name="menu_27_holes">Set with 27 holes</string>
+    <string name="menu_game_history">Game History</string>
+
+
+    //XML File Strings
+
+    <string name="app_welcome_title">Welcome to MiniGolfCounter!</string>
+    <string name="enter_name">Enter your name here!</string>
+    <string name="button_enter">Enter</string>
+    <string name="default_score">0</string>
+    <string name="button_one_stroke">1 stroke</string>
+    <string name="button_two_strokes">2 strokes</string>
+    <string name="button_three_strokes">3 strokes</string>
+    <string name="button_four_strokes">4 strokes</string>
+    <string name="button_five_strokes">5 strokes</string>
+    <string name="button_six_strokes">6 strokes</string>
+    <string name="button_undo">Undo</string>
+    <string name="button_reset">Reset</string>
+
+
+</resources>

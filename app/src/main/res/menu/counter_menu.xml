@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/new_game"
+        android:title="@string/menu_new_game" />
+
+    <item
+        android:id="@+id/sub_holes"
+        android:title="@string/menu_number_of_holes">
+
+        <menu>
+
+            <item
+                android:id="@+id/holes_18"
+                android:title="@string/menu_18_holes" />
+
+            <item
+                android:id="@+id/holes_27"
+                android:title="@string/menu_27_holes" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/history"
+        android:title="@string/menu_game_history" />
+
+</menu>

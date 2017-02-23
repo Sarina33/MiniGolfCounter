@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAppBar">#4CAF50</color>
+    <color name="colorStatusBar">#388E3C</color>
+    <color name="colorAccent">#00E676</color>
+    <color name="colorButtonNormal">#4CAF50</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="textColorPrimary">#DE000000</color>
+    <color name="textColorSecondary">#8A000000</color>
+</resources>

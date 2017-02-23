@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:background="#E8F5E9"
+        tools:context="com.example.android.practice.MainActivity">
+
+        <LinearLayout
+            style="@style/LayoutAttr1.Horizontal">
+
+            <ViewSwitcher
+                android:id="@+id/view_switcherA"
+                style="@style/LayoutAttr2.ViewSwitcher">
+
+                <EditText
+                    android:id="@+id/edit_playerA"
+                    android:layout_marginStart="5dp"
+                    android:hint="@string/enter_name"
+                    style="@style/LayoutAttr2.PlayerNameEdit" />
+
+                <TextView
+                    android:id="@+id/hidden_textViewA"
+                    style="@style/LayoutAttr2.PlayerNameTv" />
+
+            </ViewSwitcher>
+
+            <ViewSwitcher
+                android:id="@+id/view_switcherB"
+                style="@style/LayoutAttr2.ViewSwitcher">
+
+                <EditText
+                    android:id="@+id/edit_playerB"
+                    android:layout_marginEnd="5dp"
+                    android:hint="@string/enter_name"
+                    style="@style/LayoutAttr2.PlayerNameEdit" />
+
+                <TextView
+                    android:id="@+id/hidden_textViewB"
+                    style="@style/LayoutAttr2.PlayerNameTv"/>
+
+            </ViewSwitcher>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/LayoutAttr1">
+
+            <Button
+                android:id="@+id/enterNames"
+                android:onClick="setPlayerNames"
+                android:text="@string/button_enter"
+                style="@style/LayoutAttr2.EnterButton.Land"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LayoutAttr1.Horizontal">
+
+            <LinearLayout
+                style="@style/WeightLayout">
+
+                <TextView
+                    android:id="@+id/score_playerA"
+                    android:text="@string/default_score"
+                    style="@style/LayoutAttr2.Score" />
+
+                <Button
+                    android:id="@+id/one_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_one_stroke"
+                    style="@style/LayoutAttr1.Button.Land" />
+
+                <Button
+                    android:id="@+id/two_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_two_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/three_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_three_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/four_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_four_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/five_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_five_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/six_stroke_playerA"
+                    android:onClick="addScorePlayerA"
+                    android:text="@string/button_six_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WeightLayout">
+
+                <TextView
+                    android:id="@+id/score_playerB"
+                    style="@style/LayoutAttr2.Score"
+                    android:text="@string/default_score" />
+
+                <Button
+                    android:id="@+id/one_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_one_stroke"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/two_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_two_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/three_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_three_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/four_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_four_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/five_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_five_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+                <Button
+                    android:id="@+id/six_stroke_playerB"
+                    android:onClick="addScorePlayerB"
+                    android:text="@string/button_six_strokes"
+                    style="@style/LayoutAttr1.Button.Land"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/holes_count"
+            style="@style/LayoutAttr2.PlayedHoles"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/undo_button"
+                android:onClick="undoButton"
+                android:text="@string/button_undo"
+                style="@style/LayoutAttr2.UndoResetButton.Land"
+                />
+
+            <Button
+                android:id="@+id/reset_score"
+                android:layout_toEndOf="@id/undo_button"
+                android:text="@string/button_reset"
+                style="@style/LayoutAttr2.UndoResetButton.Land" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
