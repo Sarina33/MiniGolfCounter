@@ -106,17 +106,22 @@ public class MainActivity extends AppCompatActivity {
         winner = savedInstanceState.getString("Winner");
         winnerScore = savedInstanceState.getString("WinnerScore");
         wasPlayerA = savedInstanceState.getBoolean("PlayerA?");
+
         displayNamePlayerA(namePlayerA);
         displayNamePlayerB(namePlayerB);
         displayForPlayerA(scorePlayerA);
         displayForPlayerB(scorePlayerB);
-        holesMsg();
-        switcherA.showNext();
-        switcherB.showNext();
-        enter.setVisibility(View.GONE);
-    }
 
-    //Doesn't work properly if screen is changed in the very beginning
+        if (holesCount != 0) {
+            holesMsg();
+        }
+
+        if (!edtA.getText().toString().isEmpty() && !edtB.getText().toString().isEmpty()) {
+            switcherA.showNext();
+            switcherB.showNext();
+            enter.setVisibility(View.GONE);
+        }
+    }
 
 
     public void setPlayerNames(View v) {
