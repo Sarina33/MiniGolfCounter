@@ -111,6 +111,9 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
         displayForPlayerB(scorePlayerB);
         holesMsg();
+        switcherA.showNext();
+        switcherB.showNext();
+        enter.setVisibility(View.GONE);
     }
 
     //Doesn't work properly if screen is changed in the very beginning
